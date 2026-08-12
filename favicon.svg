@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shakti-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2cc8f"/>
+      <stop offset="100%" stop-color="#e07a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#shakti-grad)"/>
+  <!-- Heart Icon -->
+  <path d="M256 395c-7 0-14-3-19-8-82-78-129-123-129-173 0-41 33-74 74-74 27 0 51 14 65 37 14-23 38-37 65-37 41 0 74 33 74 74 0 50-47 95-129 173-5 5-12 8-21 8z" fill="url(#heart-grad)"/>
+  <!-- Caring Hands Accent -->
+  <path d="M160 380c20 30 50 48 96 48s76-18 96-48c-18-12-42-20-96-20s-78 8-96 20z" fill="#ffffff" opacity="0.9"/>
+</svg>
