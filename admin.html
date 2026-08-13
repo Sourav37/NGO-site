@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Portal | SHAKTI COUNCIL Kolkata</title>
-  <meta name="description" content="Management & telemetry admin portal for Shakti Council NGO Kolkata. Manage donations, volunteers, and ground campaigns.">
-  
+  <meta name="description"
+    content="Management & telemetry admin portal for Shakti Council NGO Kolkata. Manage donations, volunteers, and ground campaigns.">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="alternate icon" href="favicon.svg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.png">
+  <link rel="alternate icon" href="favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -115,12 +119,23 @@
     }
 
     @media (max-width: 900px) {
-      .admin-page-wrapper { flex-direction: column; }
-      .admin-sidebar-nav-standalone { width: 100%; border-right: none; border-bottom: 1px solid var(--border-color); }
-      .admin-standalone-content { padding: 20px; }
+      .admin-page-wrapper {
+        flex-direction: column;
+      }
+
+      .admin-sidebar-nav-standalone {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .admin-standalone-content {
+        padding: 20px;
+      }
     }
   </style>
 </head>
+
 <body class="admin-body">
 
   <!-- STANDALONE ADMIN TOP HEADER BAR -->
@@ -140,8 +155,10 @@
       <a href="index.html" class="btn btn-primary btn-lg" style="box-shadow: 0 4px 16px rgba(224, 122, 95, 0.4);">
         <i class="fa-solid fa-house"></i> ← Back to Public Website
       </a>
-      <div style="display: flex; align-items: center; gap: 10px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 16px;">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="SuperAdmin Avatar" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
+      <div
+        style="display: flex; align-items: center; gap: 10px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 16px;">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80"
+          alt="SuperAdmin Avatar" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
         <div>
           <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-white);">Dr. Ananya Sen</div>
           <div style="font-size: 0.75rem; color: var(--gold);">Super Administrator</div>
@@ -154,10 +171,11 @@
     <!-- SIDEBAR NAVIGATION -->
     <aside class="admin-sidebar-nav-standalone">
       <div>
-        <div style="font-size: 0.75rem; font-weight: 800; color: rgba(255,255,255,0.5); letter-spacing: 1px; margin-bottom: 16px; text-transform: uppercase;">
+        <div
+          style="font-size: 0.75rem; font-weight: 800; color: rgba(255,255,255,0.5); letter-spacing: 1px; margin-bottom: 16px; text-transform: uppercase;">
           MANAGEMENT MODULES
         </div>
-        
+
         <div class="admin-nav-btn active" data-tab="tab-overview">
           <i class="fa-solid fa-chart-pie"></i> Overview Dashboard
         </div>
@@ -178,8 +196,10 @@
         </div>
       </div>
 
-      <div style="background-color: rgba(255,255,255,0.05); padding: 16px; border-radius: var(--radius-sm); font-size: 0.8rem; color: rgba(255,255,255,0.7);">
-        <div style="color: var(--gold); font-weight: 700; margin-bottom: 4px;"><i class="fa-solid fa-shield-halved"></i> 80G Tax Engine Active</div>
+      <div
+        style="background-color: rgba(255,255,255,0.05); padding: 16px; border-radius: var(--radius-sm); font-size: 0.8rem; color: rgba(255,255,255,0.7);">
+        <div style="color: var(--gold); font-weight: 700; margin-bottom: 4px;"><i class="fa-solid fa-shield-halved"></i>
+          80G Tax Engine Active</div>
         <div>System Version: v2.6.4</div>
         <div style="margin-top: 8px;">Kolkata Server Node OK</div>
       </div>
@@ -187,16 +207,19 @@
 
     <!-- MAIN DASHBOARD CONTENT -->
     <main class="admin-standalone-content">
-      
+
       <!-- TAB 1: OVERVIEW DASHBOARD -->
       <div class="admin-tab-content" id="tab-overview">
         <div class="admin-header-bar">
           <div>
-            <h1 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 4px;">Shakti Council Operations Overview</h1>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">Real-time fundraising telemetry, beneficiary tracking, and volunteer activity in West Bengal.</p>
+            <h1 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 4px;">Shakti Council Operations
+              Overview</h1>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Real-time fundraising telemetry, beneficiary
+              tracking, and volunteer activity in West Bengal.</p>
           </div>
           <div style="display: flex; gap: 12px;">
-            <button class="btn btn-outline btn-sm" onclick="alert('Exporting Shakti Council Master Analytics (CSV)...')">
+            <button class="btn btn-outline btn-sm"
+              onclick="alert('Exporting Shakti Council Master Analytics (CSV)...')">
               <i class="fa-solid fa-file-export"></i> Export Report
             </button>
             <a href="index.html" class="btn btn-secondary btn-sm">
@@ -208,46 +231,60 @@
         <!-- Metric Summary Cards -->
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 36px;">
           <div class="admin-card-metric">
-            <div class="admin-metric-icon" style="background-color: #d8f3dc; color: #1b4332;"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <div class="admin-metric-icon" style="background-color: #ecf3d8; color: #1b4332;"><i
+                class="fa-solid fa-indian-rupee-sign"></i></div>
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">TOTAL FUNDS RAISED</div>
-              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">₹18,45,200</div>
-              <div style="font-size: 0.75rem; color: #16a34a; font-weight: 700;"><i class="fa-solid fa-arrow-trend-up"></i> +18.4% this month</div>
+              <div
+                style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">
+                ₹18,45,200</div>
+              <div style="font-size: 0.75rem; color: #16a34a; font-weight: 700;"><i
+                  class="fa-solid fa-arrow-trend-up"></i> +18.4% this month</div>
             </div>
           </div>
 
           <div class="admin-card-metric">
-            <div class="admin-metric-icon" style="background-color: var(--accent-soft); color: var(--accent);"><i class="fa-solid fa-user-group"></i></div>
+            <div class="admin-metric-icon" style="background-color: var(--accent-soft); color: var(--accent);"><i
+                class="fa-solid fa-user-group"></i></div>
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">ACTIVE VOLUNTEERS</div>
-              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--accent);">85 Active</div>
+              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--accent);">
+                85 Active</div>
               <div style="font-size: 0.75rem; color: var(--text-muted);">12 Applications pending</div>
             </div>
           </div>
 
           <div class="admin-card-metric">
-            <div class="admin-metric-icon" style="background-color: #e0f2fe; color: #0369a1;"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="admin-metric-icon" style="background-color: #e0f2fe; color: #0369a1;"><i
+                class="fa-solid fa-heart-pulse"></i></div>
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">LIVES IMPACTED</div>
-              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">12,500+</div>
+              <div
+                style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">
+                12,500+</div>
               <div style="font-size: 0.75rem; color: var(--text-muted);">4 Districts in West Bengal</div>
             </div>
           </div>
 
           <div class="admin-card-metric">
-            <div class="admin-metric-icon" style="background-color: #fef3c7; color: #b45309;"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="admin-metric-icon" style="background-color: #fef3c7; color: #b45309;"><i
+                class="fa-solid fa-bullhorn"></i></div>
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">ACTIVE CAMPAIGNS</div>
-              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">4 Drives</div>
+              <div
+                style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--primary-dark);">
+                4 Drives</div>
               <div style="font-size: 0.75rem; color: #16a34a; font-weight: 700;">70.4% Goal Reached</div>
             </div>
           </div>
         </div>
 
         <!-- Recent Transactions Table -->
-        <div style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 36px;">
+        <div
+          style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 36px;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-            <h3 style="font-size: 1.2rem; color: var(--primary-dark);"><i class="fa-solid fa-list-check" style="color: var(--accent);"></i> Recent Live Donations</h3>
+            <h3 style="font-size: 1.2rem; color: var(--primary-dark);"><i class="fa-solid fa-list-check"
+                style="color: var(--accent);"></i> Recent Live Donations</h3>
             <span style="font-size: 0.85rem; color: var(--text-muted);">Showing last 5 verified transactions</span>
           </div>
 
@@ -303,14 +340,40 @@
       <!-- TAB 2: DONATION RECORDS -->
       <div class="admin-tab-content" id="tab-donations" style="display: none;">
         <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">Complete Donation Registry</h2>
-        <div style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
+        <div
+          style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
           <table class="admin-table">
             <thead>
-              <tr><th>Transaction ID</th><th>Donor Name</th><th>Email</th><th>Amount</th><th>Frequency</th><th>Action</th></tr>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Donor Name</th>
+                <th>Email</th>
+                <th>Amount</th>
+                <th>Frequency</th>
+                <th>Action</th>
+              </tr>
             </thead>
             <tbody>
-              <tr><td>#TXN-90481</td><td>Sourav Ganguly</td><td>s.ganguly@bengal.in</td><td>₹25,000</td><td>One-time</td><td><button class="btn btn-sm btn-outline" onclick="alert('80G Receipt PDF downloaded successfully!')"><i class="fa-solid fa-file-pdf"></i> PDF Receipt</button></td></tr>
-              <tr><td>#TXN-90482</td><td>Meenakshi Das</td><td>meenakshi@gmail.com</td><td>₹1,000</td><td>Monthly</td><td><button class="btn btn-sm btn-outline" onclick="alert('80G Receipt PDF downloaded successfully!')"><i class="fa-solid fa-file-pdf"></i> PDF Receipt</button></td></tr>
+              <tr>
+                <td>#TXN-90481</td>
+                <td>Sourav Ganguly</td>
+                <td>s.ganguly@bengal.in</td>
+                <td>₹25,000</td>
+                <td>One-time</td>
+                <td><button class="btn btn-sm btn-outline"
+                    onclick="alert('80G Receipt PDF downloaded successfully!')"><i class="fa-solid fa-file-pdf"></i> PDF
+                    Receipt</button></td>
+              </tr>
+              <tr>
+                <td>#TXN-90482</td>
+                <td>Meenakshi Das</td>
+                <td>meenakshi@gmail.com</td>
+                <td>₹1,000</td>
+                <td>Monthly</td>
+                <td><button class="btn btn-sm btn-outline"
+                    onclick="alert('80G Receipt PDF downloaded successfully!')"><i class="fa-solid fa-file-pdf"></i> PDF
+                    Receipt</button></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -318,11 +381,19 @@
 
       <!-- TAB 3: VOLUNTEERS ROSTER -->
       <div class="admin-tab-content" id="tab-volunteers" style="display: none;">
-        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">Volunteer Applications & Roster</h2>
-        <div style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
+        <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">Volunteer Applications & Roster
+        </h2>
+        <div
+          style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
           <table class="admin-table">
             <thead>
-              <tr><th>Applicant Name</th><th>Phone</th><th>Domain</th><th>Status</th><th>Verification</th></tr>
+              <tr>
+                <th>Applicant Name</th>
+                <th>Phone</th>
+                <th>Domain</th>
+                <th>Status</th>
+                <th>Verification</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
@@ -330,7 +401,9 @@
                 <td>+91 98301 22345</td>
                 <td>Child Education / Teaching</td>
                 <td><span class="badge-status pending">Pending Review</span></td>
-                <td><button class="btn btn-sm btn-primary" onclick="this.textContent='Approved'; this.style.backgroundColor='#166534';">Approve Volunteer</button></td>
+                <td><button class="btn btn-sm btn-primary"
+                    onclick="this.textContent='Approved'; this.style.backgroundColor='#166534';">Approve
+                    Volunteer</button></td>
               </tr>
               <tr>
                 <td>Sneha Sen</td>
@@ -348,15 +421,22 @@
       <div class="admin-tab-content" id="tab-campaigns" style="display: none;">
         <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">Active Campaign Management</h2>
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-          <div style="background: var(--bg-surface); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <div
+            style="background: var(--bg-surface); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
             <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 8px;">Project Shiksha 2026</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">Goal: ₹12,00,000 | Raised: ₹8,45,000 (70.4%)</p>
-            <button class="btn btn-sm btn-outline" onclick="alert('Opening campaign editor...')"><i class="fa-solid fa-pen-to-square"></i> Edit Campaign Details</button>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">Goal: ₹12,00,000 | Raised:
+              ₹8,45,000 (70.4%)</p>
+            <button class="btn btn-sm btn-outline" onclick="alert('Opening campaign editor...')"><i
+                class="fa-solid fa-pen-to-square"></i> Edit Campaign Details</button>
           </div>
-          <div style="background: var(--bg-surface); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 8px;">Sundarbans Safe Water Initiative</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">Goal: ₹6,00,000 | Raised: ₹4,10,000 (68.3%)</p>
-            <button class="btn btn-sm btn-outline" onclick="alert('Opening campaign editor...')"><i class="fa-solid fa-pen-to-square"></i> Edit Campaign Details</button>
+          <div
+            style="background: var(--bg-surface); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 8px;">Sundarbans Safe Water
+              Initiative</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">Goal: ₹6,00,000 | Raised:
+              ₹4,10,000 (68.3%)</p>
+            <button class="btn btn-sm btn-outline" onclick="alert('Opening campaign editor...')"><i
+                class="fa-solid fa-pen-to-square"></i> Edit Campaign Details</button>
           </div>
         </div>
       </div>
@@ -364,14 +444,30 @@
       <!-- TAB 5: EVENT REGISTRATIONS -->
       <div class="admin-tab-content" id="tab-events" style="display: none;">
         <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">Event Registrations</h2>
-        <div style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
+        <div
+          style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color);">
           <table class="admin-table">
             <thead>
-              <tr><th>Event Title</th><th>Attendee Name</th><th>Phone</th><th>Registration Date</th></tr>
+              <tr>
+                <th>Event Title</th>
+                <th>Attendee Name</th>
+                <th>Phone</th>
+                <th>Registration Date</th>
+              </tr>
             </thead>
             <tbody>
-              <tr><td>Free Mega Health Camp Kolkata</td><td>Amit Kumar Mallick</td><td>+91 98765 12345</td><td>12 Aug 2026</td></tr>
-              <tr><td>Women Entrepreneurship Workshop</td><td>Priyanka Roy</td><td>+91 98765 67890</td><td>11 Aug 2026</td></tr>
+              <tr>
+                <td>Free Mega Health Camp Kolkata</td>
+                <td>Amit Kumar Mallick</td>
+                <td>+91 98765 12345</td>
+                <td>12 Aug 2026</td>
+              </tr>
+              <tr>
+                <td>Women Entrepreneurship Workshop</td>
+                <td>Priyanka Roy</td>
+                <td>+91 98765 67890</td>
+                <td>11 Aug 2026</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -380,7 +476,8 @@
       <!-- TAB 6: SETTINGS -->
       <div class="admin-tab-content" id="tab-settings" style="display: none;">
         <h2 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px;">System Settings</h2>
-        <div style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color); max-width: 600px;">
+        <div
+          style="background-color: var(--bg-surface); border-radius: var(--radius-md); padding: 28px; border: 1px solid var(--border-color); max-width: 600px;">
           <div class="form-group">
             <label class="form-label">NGO Registered Name</label>
             <input type="text" class="form-control" value="SHAKTI COUNCIL" readonly>
@@ -393,7 +490,8 @@
             <label class="form-label">Headquarters Address</label>
             <input type="text" class="form-control" value="14B Park Street, Kolkata, West Bengal 700016">
           </div>
-          <button class="btn btn-primary" onclick="alert('System settings updated successfully!')">Save Configuration</button>
+          <button class="btn btn-primary" onclick="alert('System settings updated successfully!')">Save
+            Configuration</button>
         </div>
       </div>
 
@@ -423,4 +521,5 @@
     });
   </script>
 </body>
+
 </html>

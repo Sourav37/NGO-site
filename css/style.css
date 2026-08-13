@@ -9,17 +9,17 @@
    -------------------------------------------------------------------------- */
 :root {
   /* Primary & Accent Color Palette */
-  --primary-dark: #123324;
-  --primary: #1b4332;
-  --primary-light: #2d6a4f;
-  --primary-soft: #d8f3dc;
+  --primary-dark: #292075;
+  --primary: #352f6b;
+  --primary-light: #2d456a;
+  --primary-soft: #ecf3d8;
 
   --accent: #e07a5f;
   --accent-hover: #d96445;
   --accent-light: #f4a261;
   --accent-soft: #fdf0ed;
 
-  --secondary: #2a9d8f;
+  --secondary: #00B5EF;
   --gold: #e9c46a;
 
   /* Neutral Tones */
@@ -35,7 +35,7 @@
 
   /* UI Tokens */
   --border-color: #e5e7eb;
-  --border-focus: #2d6a4f;
+  --border-focus: #2d3f6a;
 
   /* Radii */
   --radius-xs: 6px;
@@ -2902,7 +2902,8 @@ body {
     gap: 24px !important;
     margin-bottom: 45px !important;
   }
-  .initiative-row > div {
+
+  .initiative-row>div {
     order: initial !important;
   }
 }
@@ -2911,13 +2912,16 @@ body {
   .main-header .btn-admin {
     display: none;
   }
+
   .donate-wrapper {
     padding: 18px 14px;
   }
+
   .modal-box {
     padding: 24px 18px;
     width: 92%;
   }
+
   .section-title {
     font-size: clamp(1.6rem, 5vw, 2.2rem);
   }
@@ -2928,12 +2932,15 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .brand-name {
     font-size: 1rem;
   }
+
   .brand-tagline {
     font-size: 0.6rem;
   }
+
   .btn-primary {
     padding: 8px 10px;
     font-size: 0.8rem;
